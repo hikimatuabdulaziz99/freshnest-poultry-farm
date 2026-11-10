@@ -1,0 +1,305 @@
+.tableContainer {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-surface, #ffffff);
+  border: 1px solid var(--color-border, #e2e8f0);
+  border-radius: 14px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+  overflow: hidden;
+}
+
+.tableHeaderBar {
+  padding: 1.25rem 1.5rem;
+  border-bottom: 1px solid var(--color-border, #e2e8f0);
+  background-color: #fafbfc;
+}
+
+.searchFilterGroup {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  align-items: center;
+}
+
+.searchBox {
+  position: relative;
+  flex: 1;
+  min-width: 220px;
+}
+
+.searchIcon {
+  position: absolute;
+  left: 0.75rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #94a3b8;
+  pointer-events: none;
+}
+
+.searchInput {
+  width: 100%;
+  padding: 0.55rem 0.75rem 0.55rem 2.25rem;
+  font-size: 0.875rem;
+  border: 1px solid var(--color-border, #e2e8f0);
+  border-radius: 8px;
+  background-color: #ffffff;
+  color: var(--color-text-main, #1a202c);
+  outline: none;
+  transition: border-color 0.15s ease;
+}
+
+.searchInput:focus {
+  border-color: #40916c;
+}
+
+.selectInput,
+.dateInput {
+  padding: 0.55rem 0.75rem;
+  font-size: 0.875rem;
+  border: 1px solid var(--color-border, #e2e8f0);
+  border-radius: 8px;
+  background-color: #ffffff;
+  color: var(--color-text-main, #1a202c);
+  outline: none;
+  transition: border-color 0.15s ease;
+}
+
+.selectInput:focus,
+.dateInput:focus {
+  border-color: #40916c;
+}
+
+.clearFilterBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.55rem 0.85rem;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: #b91c1c;
+  background-color: #fef2f2;
+  border: 1px solid #fecaca;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.15s ease;
+}
+
+.clearFilterBtn:hover {
+  background-color: #fee2e2;
+}
+
+.responsiveTableWrapper {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.dataTable {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  font-size: 0.875rem;
+}
+
+.dataTable th {
+  padding: 0.85rem 1rem;
+  background-color: #f8fafc;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #64748b;
+  border-bottom: 1px solid var(--color-border, #e2e8f0);
+  white-space: nowrap;
+}
+
+.dataTable td {
+  padding: 0.9rem 1rem;
+  border-bottom: 1px solid #f1f5f9;
+  color: var(--color-text-main, #1a202c);
+  vertical-align: middle;
+}
+
+.dataTable tr:last-child td {
+  border-bottom: none;
+}
+
+.dataTable tr:hover {
+  background-color: #f8faf8;
+}
+
+.saleCode {
+  font-family: monospace;
+  font-weight: 700;
+  color: #1b4332;
+  font-size: 0.875rem;
+}
+
+.customerBlock {
+  display: flex;
+  flex-direction: column;
+}
+
+.customerName {
+  font-weight: 600;
+  color: #1a202c;
+}
+
+.customerPhone {
+  font-size: 0.75rem;
+  color: #64748b;
+}
+
+.productBadge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 0.2rem 0.55rem;
+  border-radius: 6px;
+  margin-bottom: 0.2rem;
+}
+
+.badgeLiveBirds {
+  background-color: #e0f2fe;
+  color: #0369a1;
+}
+
+.badgeEggs {
+  background-color: #fef3c7;
+  color: #92400e;
+}
+
+.badgeOther {
+  background-color: #f3f4f6;
+  color: #475569;
+}
+
+.productDescText {
+  font-size: 0.8125rem;
+  color: #475569;
+}
+
+.amountCell {
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.paidCell {
+  color: #166534;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.balanceCell {
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.balanceDue {
+  color: #b91c1c;
+}
+
+.balanceZero {
+  color: #64748b;
+  font-weight: 500;
+}
+
+.statusBadge {
+  display: inline-block;
+  padding: 0.25rem 0.65rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  border-radius: 999px;
+  text-transform: capitalize;
+  white-space: nowrap;
+}
+
+.statusPaid {
+  background-color: #d8f3dc;
+  color: #1b4332;
+}
+
+.statusPartial {
+  background-color: #fef3c7;
+  color: #92400e;
+}
+
+.statusUnpaid {
+  background-color: #fee2e2;
+  color: #991b1b;
+}
+
+.statusCancelled {
+  background-color: #e2e8f0;
+  color: #64748b;
+  text-decoration: line-through;
+}
+
+.actionsGroup {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.actionBtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 6px;
+  border: 1px solid var(--color-border, #e2e8f0);
+  background-color: #ffffff;
+  color: #475569;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.actionBtn:hover {
+  background-color: #f1f5f9;
+  color: #0f172a;
+}
+
+.actionBtnPay {
+  color: #15803d;
+  background-color: #f0fdf4;
+  border-color: #bbf7d0;
+}
+
+.actionBtnPay:hover {
+  background-color: #dcfce7;
+  color: #166534;
+}
+
+.actionBtnCancel {
+  color: #b91c1c;
+}
+
+.actionBtnCancel:hover {
+  background-color: #fee2e2;
+  color: #991b1b;
+}
+
+.emptyState {
+  padding: 3rem 1.5rem;
+  text-align: center;
+  color: #64748b;
+}
+
+.emptyIcon {
+  margin-bottom: 0.75rem;
+  color: #94a3b8;
+}
+
+.emptyTitle {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #1e293b;
+  margin-bottom: 0.25rem;
+}
+
+.emptySubtext {
+  font-size: 0.875rem;
+  margin: 0;
+}

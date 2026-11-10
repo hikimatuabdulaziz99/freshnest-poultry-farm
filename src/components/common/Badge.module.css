@@ -1,0 +1,67 @@
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: 600;
+  border-radius: var(--border-radius-full);
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.sm {
+  padding: 3px 8px;
+  font-size: 0.7rem;
+}
+
+.md {
+  padding: 4px 10px;
+  font-size: var(--font-size-xs);
+}
+
+.lg {
+  padding: 6px 14px;
+  font-size: var(--font-size-sm);
+}
+
+.dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: currentColor;
+}
+
+.neutral {
+  background-color: #EDF2F7;
+  color: #4A5568;
+}
+
+.primary {
+  background-color: var(--color-accent-subtle);
+  color: var(--color-primary);
+}
+
+.secondary {
+  background-color: #E8F5E9;
+  color: var(--color-secondary);
+}
+
+.success {
+  background-color: #DCFCE7;
+  color: #166534;
+}
+
+.warning {
+  background-color: #FEF3C7;
+  color: #92400E;
+}
+
+.danger {
+  background-color: #FEE2E2;
+  color: #991B1B;
+}
+
+.accent {
+  background-color: var(--color-accent-lightest);
+  color: var(--color-primary);
+  border: 1px solid var(--color-accent);
+}

@@ -1,0 +1,267 @@
+/* ReportCharts Styles */
+.chartsWrapper {
+  margin-bottom: 24px;
+}
+
+.chartTabBar {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  overflow-x: auto;
+  padding-bottom: 8px;
+  margin-bottom: 12px;
+}
+
+.chartTabBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 7px 12px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: #4A5568;
+  background-color: #FFFFFF;
+  border: 1px solid #E2E8F0;
+  border-radius: 6px;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all 0.15s ease;
+}
+
+.chartTabBtn:hover {
+  color: #1B4332;
+  border-color: #CBD5E0;
+}
+
+.chartTabBtnActive {
+  background-color: #1B4332;
+  color: #FFFFFF !important;
+  border-color: #1B4332;
+  font-weight: 600;
+}
+
+.chartCard {
+  background-color: #FFFFFF;
+  border: 1px solid #E2E8F0;
+  border-radius: 8px;
+  padding: 16px 20px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+}
+
+.chartContent {
+  display: flex;
+  flex-direction: column;
+}
+
+.chartHeader {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.chartTitle {
+  font-size: 0.9375rem;
+  font-weight: 700;
+  color: #1A202C;
+  margin: 0;
+}
+
+.chartSubtitle {
+  font-size: 0.75rem;
+  color: #718096;
+  margin: 2px 0 0 0;
+}
+
+.legendRow {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.legendItem {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: #4A5568;
+}
+
+.legendColorSales {
+  width: 10px;
+  height: 10px;
+  background-color: #40916C;
+  border-radius: 2px;
+}
+
+.legendColorExpenses {
+  width: 10px;
+  height: 10px;
+  background-color: #E53E3E;
+  border-radius: 2px;
+}
+
+.emptyChart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 36px 20px;
+  text-align: center;
+  background-color: #F8FAF8;
+  border-radius: 6px;
+  border: 1px dashed #D8F3DC;
+}
+
+.emptyIcon {
+  color: #74C69D;
+  margin-bottom: 8px;
+}
+
+.emptyTitle {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #1B4332;
+  margin: 0 0 4px 0;
+}
+
+.emptyDesc {
+  font-size: 0.75rem;
+  color: #718096;
+  margin: 0;
+  max-width: 400px;
+}
+
+.svgContainer {
+  width: 100%;
+  overflow-x: auto;
+  padding: 8px 0;
+}
+
+.svgElement {
+  width: 100%;
+  height: 220px;
+}
+
+.barChartScroll {
+  overflow-x: auto;
+  padding-bottom: 8px;
+}
+
+.barsContainer {
+  display: flex;
+  align-items: flex-end;
+  gap: 16px;
+  min-height: 220px;
+  padding: 10px 10px 0 10px;
+}
+
+.barGroup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+
+.barPair {
+  display: flex;
+  align-items: flex-end;
+  gap: 3px;
+}
+
+.barSales {
+  background-color: #40916C;
+  border-radius: 3px 3px 0 0;
+  transition: opacity 0.15s ease;
+  cursor: pointer;
+}
+
+.barSales:hover {
+  opacity: 0.85;
+}
+
+.barExpenses {
+  background-color: #E53E3E;
+  border-radius: 3px 3px 0 0;
+  transition: opacity 0.15s ease;
+  cursor: pointer;
+}
+
+.barExpenses:hover {
+  opacity: 0.85;
+}
+
+.barMortality {
+  background-color: #C53030;
+  border-radius: 3px 3px 0 0;
+  cursor: pointer;
+}
+
+.barFeed {
+  background-color: #74C69D;
+  border-radius: 3px 3px 0 0;
+  cursor: pointer;
+}
+
+.barLabel {
+  font-size: 0.6875rem;
+  color: #718096;
+}
+
+.distributionList {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 8px 0;
+}
+
+.distRow {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.distMeta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.75rem;
+}
+
+.distName {
+  font-weight: 600;
+  color: #2D3748;
+}
+
+.distValue {
+  color: #718096;
+  font-weight: 500;
+}
+
+.distTrack {
+  height: 8px;
+  background-color: #EDF2F7;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.distFill {
+  height: 100%;
+  border-radius: 4px;
+  transition: width 0.3s ease;
+}
+
+@media print {
+  .chartTabBar {
+    display: none !important;
+  }
+
+  .chartCard {
+    border: 1px solid #CBD5E0 !important;
+    box-shadow: none !important;
+    page-break-inside: avoid;
+  }
+}

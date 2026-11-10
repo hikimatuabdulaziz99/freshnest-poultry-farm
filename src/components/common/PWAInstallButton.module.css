@@ -1,0 +1,193 @@
+.installBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 14px;
+  background-color: #1B4332;
+  color: #FFFFFF;
+  border: 1px solid #2D6A4F;
+  border-radius: 6px;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  white-space: nowrap;
+}
+
+.installBtn:hover:not(:disabled) {
+  background-color: #2D6A4F;
+  box-shadow: 0 2px 6px rgba(27, 67, 50, 0.2);
+}
+
+.compactBtn {
+  padding: 4px 10px;
+  font-size: 0.75rem;
+}
+
+.iosBtn {
+  background-color: #F8FAF8;
+  color: #1B4332;
+  border: 1px solid #74C69D;
+}
+
+.iosBtn:hover:not(:disabled) {
+  background-color: #D8F3DC;
+}
+
+.btnIcon {
+  color: #74C69D;
+}
+
+.iosBtn .btnIcon {
+  color: #1B4332;
+}
+
+/* Modal for iOS Guide */
+.modalBackdrop {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.55);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 16px;
+}
+
+.modalCard {
+  background-color: #FFFFFF;
+  border-radius: 12px;
+  max-width: 420px;
+  width: 100%;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.modalHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 20px;
+  background-color: #1B4332;
+  color: #FFFFFF;
+}
+
+.headerTitleGroup {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.modalIcon {
+  color: #74C69D;
+}
+
+.modalTitle {
+  font-size: 1rem;
+  font-weight: 700;
+  margin: 0;
+  color: #FFFFFF;
+}
+
+.closeBtn {
+  background: none;
+  border: none;
+  color: #D8F3DC;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  padding: 4px;
+}
+
+.closeBtn:hover {
+  color: #FFFFFF;
+}
+
+.modalBody {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.stepIntro {
+  font-size: 0.875rem;
+  color: #2D3748;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.stepList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.stepItem {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background-color: #F8FAF8;
+  border: 1px solid #D8F3DC;
+  border-radius: 8px;
+  padding: 10px 14px;
+}
+
+.stepIconBox {
+  width: 32px;
+  height: 32px;
+  border-radius: 6px;
+  background-color: #1B4332;
+  color: #D8F3DC;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 0.875rem;
+  flex-shrink: 0;
+}
+
+.stepText {
+  font-size: 0.8125rem;
+  color: #1A202C;
+  line-height: 1.4;
+}
+
+.offlineNote {
+  background-color: #EBF8FF;
+  border-left: 3px solid #3182CE;
+  padding: 10px 12px;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  color: #2B6CB0;
+  line-height: 1.4;
+}
+
+.modalFooter {
+  padding: 14px 20px;
+  background-color: #F8FAF8;
+  border-top: 1px solid #E2E8F0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.gotItBtn {
+  padding: 8px 18px;
+  background-color: #1B4332;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.15s ease;
+}
+
+.gotItBtn:hover {
+  background-color: #2D6A4F;
+}

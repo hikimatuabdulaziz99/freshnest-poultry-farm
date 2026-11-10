@@ -1,0 +1,437 @@
+.tableCard {
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+  overflow: hidden;
+  margin-bottom: 2rem;
+}
+
+.toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem 1.25rem;
+  border-bottom: 1px solid #f1f5f9;
+  background-color: #fafafa;
+}
+
+.searchWrapper {
+  position: relative;
+  flex: 1;
+  min-width: 260px;
+}
+
+.searchIcon {
+  position: absolute;
+  left: 0.85rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #94a3b8;
+  pointer-events: none;
+}
+
+.searchInput {
+  width: 100%;
+  padding: 0.6rem 2.2rem 0.6rem 2.5rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  font-size: 0.875rem;
+  outline: none;
+  background-color: #ffffff;
+  transition: all 0.2s;
+}
+
+.searchInput:focus {
+  border-color: #0284c7;
+  box-shadow: 0 0 0 3px rgba(2, 132, 199, 0.15);
+}
+
+.clearSearchBtn {
+  position: absolute;
+  right: 0.65rem;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  font-size: 1.25rem;
+  color: #94a3b8;
+  cursor: pointer;
+  line-height: 1;
+}
+
+.filtersWrapper {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.filterGroup {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.filterIcon {
+  position: absolute;
+  left: 0.75rem;
+  color: #64748b;
+  pointer-events: none;
+}
+
+.filterSelect {
+  padding: 0.55rem 1.75rem 0.55rem 2rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  background-color: #ffffff;
+  font-size: 0.875rem;
+  color: #334155;
+  outline: none;
+  cursor: pointer;
+  appearance: none;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%2364748b' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: right 0.65rem center;
+  background-size: 14px;
+}
+
+.filterSelect:focus {
+  border-color: #0284c7;
+}
+
+.tableResponsive {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.medicationTable {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  font-size: 0.875rem;
+}
+
+.medicationTable thead {
+  background-color: #f8fafc;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.medicationTable th {
+  padding: 0.85rem 1rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #64748b;
+  letter-spacing: 0.04em;
+  white-space: nowrap;
+}
+
+.medicationTable td {
+  padding: 0.9rem 1rem;
+  border-bottom: 1px solid #f1f5f9;
+  vertical-align: middle;
+  color: #334155;
+}
+
+.medicationTable tbody tr:hover {
+  background-color: #f8fafc;
+}
+
+.expiredRow {
+  background-color: #fffaf0;
+}
+
+.medNameCell {
+  min-width: 180px;
+}
+
+.medNameWrap {
+  display: flex;
+  flex-direction: column;
+}
+
+.medName {
+  font-size: 0.925rem;
+  font-weight: 600;
+  color: #0f172a;
+}
+
+.medCode {
+  font-size: 0.75rem;
+  color: #0284c7;
+  font-weight: 600;
+}
+
+.typeBadge {
+  display: inline-block;
+  padding: 0.2rem 0.55rem;
+  border-radius: 6px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  background-color: #e0f2fe;
+  color: #0369a1;
+}
+
+.truncateCell {
+  max-width: 180px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #475569;
+}
+
+.stockCell {
+  min-width: 110px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.stockNumber {
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.stockNumber small {
+  font-weight: 500;
+  color: #64748b;
+  margin-left: 2px;
+}
+
+.stockBarTrack {
+  width: 100%;
+  height: 6px;
+  background-color: #e2e8f0;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.stockBarFill {
+  height: 100%;
+  border-radius: 3px;
+  transition: width 0.3s ease;
+}
+
+.fillSuccess { background-color: #10b981; }
+.fillWarning { background-color: #f59e0b; }
+.fillDanger  { background-color: #ef4444; }
+
+.reorderHint {
+  font-size: 0.7rem;
+  color: #94a3b8;
+}
+
+.priceCell {
+  font-weight: 600;
+  color: #0f172a;
+  white-space: nowrap;
+}
+
+.priceUnit {
+  font-size: 0.75rem;
+  color: #64748b;
+  font-weight: normal;
+}
+
+.dateCell {
+  white-space: nowrap;
+  font-size: 0.8125rem;
+}
+
+.expiredText {
+  color: #dc2626;
+  font-weight: 700;
+}
+
+.withdrawalCell {
+  white-space: nowrap;
+}
+
+.withdrawalBadge {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #b91c1c;
+  background-color: #fee2e2;
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+}
+
+.zeroWithdrawal {
+  font-size: 0.75rem;
+  color: #15803d;
+  font-weight: 600;
+}
+
+/* Status Badges */
+.statusBadge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.25rem 0.65rem;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.badgeInStock {
+  background-color: #ecfdf5;
+  color: #059669;
+}
+
+.badgeLowStock {
+  background-color: #fffbeb;
+  color: #d97706;
+}
+
+.badgeOutOfStock {
+  background-color: #f1f5f9;
+  color: #475569;
+}
+
+.badgeExpired {
+  background-color: #fef2f2;
+  color: #dc2626;
+}
+
+/* Actions Column */
+.actionsColumn {
+  text-align: right;
+  padding-right: 1.25rem;
+}
+
+.actionsCell {
+  text-align: right;
+}
+
+.actionButtons {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.actionBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 6px;
+  border: 1px solid #e2e8f0;
+  background-color: #ffffff;
+  color: #475569;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.actionBtn:hover:not(:disabled) {
+  background-color: #f1f5f9;
+  border-color: #cbd5e1;
+  color: #0f172a;
+}
+
+.actionBtn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.restockBtn:hover:not(:disabled) {
+  background-color: #ecfdf5;
+  border-color: #a7f3d0;
+  color: #059669;
+}
+
+.administerBtn:hover:not(:disabled) {
+  background-color: #eff6ff;
+  border-color: #bfdbfe;
+  color: #2563eb;
+}
+
+.deleteBtn:hover:not(:disabled) {
+  background-color: #fef2f2;
+  border-color: #fecaca;
+  color: #dc2626;
+}
+
+/* Empty State */
+.emptyCell {
+  padding: 3rem 1rem !important;
+  text-align: center;
+}
+
+.emptyState {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.emptyIcon {
+  color: #94a3b8;
+}
+
+.emptyTitle {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #1e293b;
+  margin: 0;
+}
+
+.emptyText {
+  font-size: 0.85rem;
+  color: #64748b;
+  margin: 0;
+}
+
+/* Pagination */
+.paginationBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.85rem 1.25rem;
+  border-top: 1px solid #f1f5f9;
+  background-color: #fafafa;
+  font-size: 0.8125rem;
+  color: #64748b;
+}
+
+.paginationButtons {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.pageBtn {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.4rem 0.75rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  background-color: #ffffff;
+  color: #334155;
+  font-size: 0.8rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.pageBtn:hover:not(:disabled) {
+  background-color: #f1f5f9;
+  border-color: #94a3b8;
+}
+
+.pageBtn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.pageIndicator {
+  font-weight: 600;
+  color: #1e293b;
+}

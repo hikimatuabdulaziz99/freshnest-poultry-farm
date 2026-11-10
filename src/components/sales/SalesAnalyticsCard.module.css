@@ -1,0 +1,164 @@
+.analyticsContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.25rem;
+}
+
+@media (max-width: 900px) {
+  .analyticsContainer {
+    grid-template-columns: 1fr;
+  }
+}
+
+.analyticsCard {
+  background-color: var(--color-surface, #ffffff);
+  border: 1px solid var(--color-border, #e2e8f0);
+  border-radius: 14px;
+  padding: 1.5rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.cardHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cardTitle {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.cardSubtitle {
+  font-size: 0.75rem;
+  color: #64748b;
+  margin: 0.15rem 0 0 0;
+}
+
+.breakdownList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+.breakdownItem {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.itemLabelRow {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8125rem;
+}
+
+.itemName {
+  font-weight: 600;
+  color: #334155;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.itemValues {
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.progressBarTrack {
+  width: 100%;
+  height: 8px;
+  background-color: #f1f5f9;
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.progressBarFill {
+  height: 100%;
+  border-radius: 999px;
+  transition: width 0.3s ease;
+}
+
+.fillGreen {
+  background-color: #1b4332;
+}
+
+.fillFresh {
+  background-color: #40916c;
+}
+
+.fillAmber {
+  background-color: #d97706;
+}
+
+.fillBlue {
+  background-color: #0284c7;
+}
+
+.trendCard {
+  grid-column: 1 / -1;
+  background-color: var(--color-surface, #ffffff);
+  border: 1px solid var(--color-border, #e2e8f0);
+  border-radius: 14px;
+  padding: 1.5rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+}
+
+.trendGrid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 0.75rem;
+  align-items: flex-end;
+  min-height: 140px;
+  padding-top: 1.5rem;
+}
+
+.trendCol {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.45rem;
+  height: 100%;
+  justify-content: flex-end;
+}
+
+.trendBarTrack {
+  width: 100%;
+  max-width: 42px;
+  height: 90px;
+  background-color: #f8fafc;
+  border-radius: 6px;
+  display: flex;
+  align-items: flex-end;
+  padding: 2px;
+}
+
+.trendBarFill {
+  width: 100%;
+  background-color: #1b4332;
+  border-radius: 4px;
+  min-height: 4px;
+  transition: height 0.3s ease;
+}
+
+.trendDayLabel {
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: #64748b;
+  text-align: center;
+}
+
+.trendAmountLabel {
+  font-size: 0.6875rem;
+  font-weight: 700;
+  color: #1e293b;
+}

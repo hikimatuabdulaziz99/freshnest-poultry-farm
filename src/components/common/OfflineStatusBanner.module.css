@@ -1,0 +1,63 @@
+.offlineBanner {
+  background-color: #FEFCBF;
+  border-bottom: 1px solid #FAF089;
+  color: #744210;
+  padding: 8px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.8125rem;
+  z-index: 50;
+}
+
+.contentGroup {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.iconOffline {
+  color: #D69E2E;
+  flex-shrink: 0;
+}
+
+.bannerText {
+  line-height: 1.4;
+}
+
+.dismissBtn {
+  background: none;
+  border: none;
+  color: #975A16;
+  cursor: pointer;
+  padding: 2px 6px;
+  display: flex;
+  align-items: center;
+  border-radius: 4px;
+}
+
+.dismissBtn:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.restoredBanner {
+  background-color: #D8F3DC;
+  border-bottom: 1px solid #B7E4C7;
+  color: #1B4332;
+  padding: 8px 16px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.8125rem;
+  animation: fadeIn 0.3s ease-in;
+}
+
+.iconRestored {
+  color: #2D6A4F;
+  flex-shrink: 0;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-4px); }
+  to { opacity: 1; transform: translateY(0); }
+}

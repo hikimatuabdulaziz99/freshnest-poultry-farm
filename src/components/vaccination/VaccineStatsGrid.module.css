@@ -1,0 +1,136 @@
+.gridContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+@media (min-width: 1200px) {
+  .gridContainer {
+    grid-template-columns: repeat(7, 1fr);
+  }
+}
+
+.statCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1.15rem;
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  text-align: left;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+}
+
+.statCard:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.selectedCard {
+  border-color: #2563eb;
+  outline: 2px solid #bfdbfe;
+}
+
+.highlightPulse {
+  animation: pulseBorder 2.5s infinite;
+}
+
+@keyframes pulseBorder {
+  0% {
+    box-shadow: 0 0 0 0 rgba(239, 68, 68, 0.4);
+  }
+  70% {
+    box-shadow: 0 0 0 8px rgba(239, 68, 68, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(239, 68, 68, 0);
+  }
+}
+
+.cardHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.75rem;
+}
+
+.cardLabel {
+  font-size: 0.775rem;
+  font-weight: 600;
+  color: #64748b;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.cardIconBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+}
+
+.cardBody {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.cardValue {
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: #0f172a;
+  line-height: 1.2;
+}
+
+.cardFootnote {
+  font-size: 0.75rem;
+  color: #94a3b8;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Themes */
+.primaryTheme .cardIconBox {
+  background-color: #eff6ff;
+  color: #2563eb;
+}
+
+.successTheme .cardIconBox {
+  background-color: #ecfdf5;
+  color: #059669;
+}
+
+.infoTheme .cardIconBox {
+  background-color: #f0f9ff;
+  color: #0284c7;
+}
+
+.warningTheme .cardIconBox {
+  background-color: #fffbeb;
+  color: #d97706;
+}
+
+.warningTheme .cardValue {
+  color: #b45309;
+}
+
+.dangerTheme .cardIconBox {
+  background-color: #fef2f2;
+  color: #dc2626;
+}
+
+.dangerTheme .cardValue {
+  color: #dc2626;
+}
+
+.neutralTheme .cardIconBox {
+  background-color: #f8fafc;
+  color: #64748b;
+}

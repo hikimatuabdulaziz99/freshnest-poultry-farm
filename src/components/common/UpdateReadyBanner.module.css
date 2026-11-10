@@ -1,0 +1,83 @@
+.updateBanner {
+  background-color: #1B4332;
+  border-bottom: 1px solid #2D6A4F;
+  color: #FFFFFF;
+  padding: 8px 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  font-size: 0.8125rem;
+  z-index: 60;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.leftGroup {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.sparkleIcon {
+  color: #74C69D;
+  flex-shrink: 0;
+}
+
+.bannerText {
+  line-height: 1.4;
+  color: #D8F3DC;
+}
+
+.bannerText strong {
+  color: #FFFFFF;
+}
+
+.actionGroup {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.updateBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 12px;
+  background-color: #40916C;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.15s ease;
+  white-space: nowrap;
+}
+
+.updateBtn:hover:not(:disabled) {
+  background-color: #52B788;
+}
+
+.spinning {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.dismissBtn {
+  background: none;
+  border: none;
+  color: #95D5B2;
+  cursor: pointer;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  border-radius: 4px;
+}
+
+.dismissBtn:hover {
+  color: #FFFFFF;
+}

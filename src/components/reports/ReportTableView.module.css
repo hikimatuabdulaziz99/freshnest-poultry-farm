@@ -1,0 +1,306 @@
+/* ReportTableView Styles */
+.tableCard {
+  background-color: #FFFFFF;
+  border: 1px solid #E2E8F0;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+  overflow: hidden;
+}
+
+.tableTopBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding: 14px 18px;
+  border-bottom: 1px solid #E2E8F0;
+  background-color: #F8FAF8;
+}
+
+.tableTitleGroup {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.tableHeading {
+  font-size: 0.9375rem;
+  font-weight: 700;
+  color: #1B4332;
+  margin: 0;
+}
+
+.recordCountBadge {
+  background-color: #D8F3DC;
+  color: #1B4332;
+  font-size: 0.6875rem;
+  font-weight: 600;
+  padding: 3px 8px;
+  border-radius: 12px;
+}
+
+.searchWrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.searchIcon {
+  position: absolute;
+  left: 9px;
+  color: #A0AEC0;
+}
+
+.searchInput {
+  padding: 6px 28px 6px 28px;
+  font-size: 0.75rem;
+  border: 1px solid #CBD5E0;
+  border-radius: 6px;
+  width: 220px;
+  outline: none;
+  background-color: #FFFFFF;
+}
+
+.searchInput:focus {
+  border-color: #40916C;
+  box-shadow: 0 0 0 1px #40916C;
+}
+
+.clearSearchBtn {
+  position: absolute;
+  right: 6px;
+  background: none;
+  border: none;
+  color: #A0AEC0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  padding: 2px;
+}
+
+.tableResponsive {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.dataTable {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  font-size: 0.8125rem;
+}
+
+.dataTable th {
+  background-color: #F8FAF8;
+  color: #4A5568;
+  font-weight: 600;
+  padding: 10px 14px;
+  border-bottom: 1px solid #E2E8F0;
+  white-space: nowrap;
+}
+
+.dataTable td {
+  padding: 10px 14px;
+  border-bottom: 1px solid #EDF2F7;
+  color: #2D3748;
+}
+
+.dataTable tr:hover td {
+  background-color: #F8FAF8;
+}
+
+.dataTable tfoot td {
+  background-color: #F8FAF8;
+  padding: 10px 14px;
+  border-top: 2px solid #CBD5E0;
+}
+
+.fontBold {
+  font-weight: 600;
+  color: #1A202C;
+}
+
+.textMuted {
+  color: #718096;
+}
+
+.textSuccess {
+  color: #276749;
+  font-weight: 600;
+}
+
+.textWarning {
+  color: #DD6B20;
+  font-weight: 600;
+}
+
+.textDanger {
+  color: #C53030;
+  font-weight: 600;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 2px 7px;
+  border-radius: 4px;
+  font-size: 0.6875rem;
+  font-weight: 600;
+  background-color: #EDF2F7;
+  color: #4A5568;
+  text-transform: capitalize;
+}
+
+.badgeSuccess {
+  background-color: #D8F3DC;
+  color: #1B4332;
+}
+
+.badgeWarning {
+  background-color: #FEFCBF;
+  color: #975A16;
+}
+
+.badgeDanger {
+  background-color: #FED7D7;
+  color: #9B2C2C;
+}
+
+.emptyContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 48px 24px;
+  text-align: center;
+  background-color: #FFFFFF;
+  border: 1px solid #E2E8F0;
+  border-radius: 8px;
+}
+
+.emptyIconBox {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background-color: #F8FAF8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 12px;
+}
+
+.emptyIcon {
+  color: #74C69D;
+}
+
+.emptyTitle {
+  font-size: 0.9375rem;
+  font-weight: 700;
+  color: #1B4332;
+  margin: 0 0 6px 0;
+}
+
+.emptyDesc {
+  font-size: 0.8125rem;
+  color: #718096;
+  max-width: 440px;
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* Financial Statement Styles */
+.financialStatementContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 20px;
+  padding: 16px;
+}
+
+.statementSection {
+  background-color: #F8FAF8;
+  border: 1px solid #E2E8F0;
+  border-radius: 6px;
+  padding: 14px 16px;
+}
+
+.statementTitle {
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: #1B4332;
+  margin: 0 0 10px 0;
+  padding-bottom: 6px;
+  border-bottom: 1px solid #D8F3DC;
+}
+
+.statementTable {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.8125rem;
+}
+
+.statementRowHeader td {
+  padding: 8px 0 4px 0;
+  font-weight: 700;
+  color: #2D3748;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+}
+
+.statementIndent {
+  padding-left: 12px !important;
+  color: #4A5568;
+}
+
+.statementTable td {
+  padding: 6px 0;
+  border-bottom: 1px dashed #E2E8F0;
+}
+
+.statementValue {
+  text-align: right;
+  font-weight: 600;
+  color: #1A202C;
+}
+
+.statementRowHighlight td {
+  padding: 10px 0 6px 0;
+  font-weight: 700;
+  color: #1B4332;
+  border-top: 1px solid #1B4332;
+  border-bottom: 2px solid #1B4332;
+}
+
+.statementValueHighlight {
+  text-align: right;
+  font-size: 0.9375rem;
+  font-weight: 700;
+  color: #1B4332;
+}
+
+@media print {
+  .tableTopBar {
+    background-color: transparent !important;
+  }
+
+  .searchWrapper {
+    display: none !important;
+  }
+
+  .tableCard {
+    border: none !important;
+    box-shadow: none !important;
+  }
+
+  .dataTable th,
+  .dataTable td {
+    padding: 6px 8px !important;
+    font-size: 0.75rem !important;
+  }
+
+  .statementSection {
+    background-color: transparent !important;
+    border: 1px solid #CBD5E0 !important;
+  }
+}

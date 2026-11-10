@@ -1,0 +1,172 @@
+.alertCounterActive {
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: #B91C1C;
+  background-color: #FEE2E2;
+  padding: 3px 9px;
+  border-radius: var(--border-radius-full);
+}
+
+.alertCounterNominal {
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: #15803D;
+  background-color: #DCFCE7;
+  padding: 3px 9px;
+  border-radius: var(--border-radius-full);
+}
+
+.nominalState {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-4);
+  padding: var(--spacing-5);
+  background-color: #FAFCFA;
+  border: 1px solid #DCFCE7;
+  border-radius: var(--border-radius-md);
+}
+
+.nominalIconBox {
+  width: 48px;
+  height: 48px;
+  border-radius: var(--border-radius-full);
+  background-color: #DCFCE7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.nominalIcon {
+  color: #166534;
+}
+
+.nominalText {
+  display: flex;
+  flex-direction: column;
+}
+
+.nominalTitle {
+  font-size: var(--font-size-sm);
+  font-weight: 700;
+  color: var(--color-primary);
+  margin-bottom: 2px;
+}
+
+.nominalDesc {
+  font-size: var(--font-size-xs);
+  color: var(--color-text-secondary);
+  line-height: 1.45;
+}
+
+.alertsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--spacing-4);
+}
+
+.alertCard {
+  border-radius: var(--border-radius-md);
+  padding: var(--spacing-4);
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  border: 1px solid transparent;
+}
+
+.alertCard:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-sm);
+}
+
+.warning {
+  background-color: #FFFBEB;
+  border-color: #FDE68A;
+}
+
+.warning .severityTag {
+  color: #B45309;
+  background-color: #FEF3C7;
+}
+
+.warning .alertIcon {
+  background-color: #FEF3C7;
+  color: #B45309;
+}
+
+.danger {
+  background-color: #FEF2F2;
+  border-color: #FECACA;
+}
+
+.danger .severityTag {
+  color: #B91C1C;
+  background-color: #FEE2E2;
+}
+
+.danger .alertIcon {
+  background-color: #FEE2E2;
+  color: #B91C1C;
+}
+
+.alertHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: var(--spacing-2);
+}
+
+.iconTagRow {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-2);
+}
+
+.alertIcon {
+  width: 28px;
+  height: 28px;
+  border-radius: var(--border-radius-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.severityTag {
+  font-size: 0.65rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 2px 7px;
+  border-radius: var(--border-radius-full);
+}
+
+.arrow {
+  color: var(--color-text-muted);
+}
+
+.alertTitle {
+  font-size: var(--font-size-sm);
+  font-weight: 700;
+  color: var(--color-text-main);
+  margin-bottom: 3px;
+}
+
+.alertMessage {
+  font-size: 0.72rem;
+  color: var(--color-text-secondary);
+  line-height: 1.4;
+  flex: 1;
+  margin-bottom: var(--spacing-3);
+}
+
+.alertFooter {
+  border-top: 1px solid rgba(0, 0, 0, 0.06);
+  padding-top: var(--spacing-2);
+}
+
+.moduleLink {
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: var(--color-primary);
+}

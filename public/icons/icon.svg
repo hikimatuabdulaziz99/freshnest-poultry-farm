@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1B4332" />
+      <stop offset="100%" stop-color="#081C15" />
+    </linearGradient>
+    <linearGradient id="eggGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="50%" stop-color="#D8F3DC" />
+      <stop offset="100%" stop-color="#B7E4C7" />
+    </linearGradient>
+    <linearGradient id="leafGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#74C69D" />
+      <stop offset="100%" stop-color="#40916C" />
+    </linearGradient>
+    <filter id="dropShadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#000000" flood-opacity="0.35" />
+    </filter>
+  </defs>
+
+  <!-- Background Canvas with rounded squircle -->
+  <rect width="512" height="512" rx="108" fill="url(#bgGrad)" />
+
+  <!-- Outer Ring Accent -->
+  <rect x="20" y="20" width="472" height="472" rx="92" fill="none" stroke="#40916C" stroke-width="4" stroke-opacity="0.4" />
+
+  <!-- Central Nest / Egg Emblem -->
+  <g filter="url(#dropShadow)">
+    <!-- Golden Egg Silhouette -->
+    <path d="M 256 110 C 205 110 160 185 160 275 C 160 345 202 395 256 395 C 310 395 352 345 352 275 C 352 185 307 110 256 110 Z" fill="url(#eggGrad)" />
+    
+    <!-- Stylized Fresh Leaf / Sprout Overlay -->
+    <path d="M 256 220 C 275 190 320 180 340 205 C 345 235 320 270 280 275 C 265 277 258 260 256 220 Z" fill="url(#leafGrad)" opacity="0.95" />
+
+    <!-- Stylized Bird Wing Silhouette -->
+    <path d="M 230 250 C 200 240 175 265 185 300 C 195 330 245 335 255 295 C 255 275 245 255 230 250 Z" fill="#2D6A4F" opacity="0.9" />
+
+    <!-- Chick / Bird Beak Accent -->
+    <polygon points="175,270 155,278 178,285" fill="#E9C46A" />
+
+    <!-- Eye of the bird -->
+    <circle cx="195" cy="272" r="5" fill="#1B4332" />
+  </g>
+
+  <!-- Brand Typography Arc or Baseline Badge -->
+  <rect x="136" y="420" width="240" height="42" rx="21" fill="#40916C" />
+  <text x="256" y="447" font-family="system-ui, -apple-system, sans-serif" font-size="20" font-weight="800" fill="#FFFFFF" text-anchor="middle" letter-spacing="3">FRESHNEST</text>
+</svg>

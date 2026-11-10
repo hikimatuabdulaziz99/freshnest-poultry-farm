@@ -1,0 +1,321 @@
+.tableContainer {
+  background-color: var(--color-surface, #ffffff);
+  border: 1px solid var(--color-border, #e2e8f0);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+}
+
+.tableHeaderBar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem 1.25rem;
+  border-bottom: 1px solid var(--color-border, #e2e8f0);
+  background-color: #fafbfc;
+}
+
+.searchFilterGroup {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem;
+  flex: 1;
+}
+
+.searchBox {
+  position: relative;
+  min-width: 220px;
+  max-width: 320px;
+  flex: 1;
+}
+
+.searchIcon {
+  position: absolute;
+  left: 0.75rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #94a3b8;
+  pointer-events: none;
+}
+
+.searchInput {
+  width: 100%;
+  padding: 0.5rem 0.75rem 0.5rem 2.25rem;
+  font-size: 0.875rem;
+  border: 1px solid var(--color-border, #cbd5e1);
+  border-radius: 6px;
+  outline: none;
+  background-color: #ffffff;
+  color: var(--color-text-main, #1a202c);
+  transition: border-color 0.15s ease-in-out;
+}
+
+.searchInput:focus {
+  border-color: var(--color-primary, #1b4332);
+}
+
+.selectInput,
+.dateInput {
+  padding: 0.5rem 0.75rem;
+  font-size: 0.875rem;
+  border: 1px solid var(--color-border, #cbd5e1);
+  border-radius: 6px;
+  outline: none;
+  background-color: #ffffff;
+  color: var(--color-text-main, #1a202c);
+  cursor: pointer;
+}
+
+.selectInput:focus,
+.dateInput:focus {
+  border-color: var(--color-primary, #1b4332);
+}
+
+.actionButtonGroup {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.btnSecondary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.5rem 0.85rem;
+  font-size: 0.84rem;
+  font-weight: 500;
+  border: 1px solid var(--color-border, #cbd5e1);
+  border-radius: 6px;
+  background-color: #ffffff;
+  color: var(--color-text-main, #1a202c);
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.btnSecondary:hover {
+  background-color: #f8fafc;
+  border-color: #94a3b8;
+}
+
+.responsiveTableWrapper {
+  overflow-x: auto;
+  width: 100%;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.875rem;
+  text-align: left;
+}
+
+.table th {
+  padding: 0.75rem 1rem;
+  background-color: #f8fafc;
+  color: var(--color-text-secondary, #475569);
+  font-weight: 600;
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  border-bottom: 1px solid var(--color-border, #e2e8f0);
+  white-space: nowrap;
+}
+
+.table td {
+  padding: 0.85rem 1rem;
+  border-bottom: 1px solid #f1f5f9;
+  color: var(--color-text-main, #1a202c);
+  vertical-align: middle;
+}
+
+.table tr:hover td {
+  background-color: #f8faf8;
+}
+
+.logIdTag {
+  font-family: monospace;
+  font-weight: 600;
+  color: var(--color-primary, #1b4332);
+  background-color: #e8f5e9;
+  padding: 0.2rem 0.45rem;
+  border-radius: 4px;
+  font-size: 0.82rem;
+}
+
+.batchBadge {
+  display: inline-flex;
+  flex-direction: column;
+}
+
+.batchCode {
+  font-weight: 600;
+  color: var(--color-text-main, #1a202c);
+}
+
+.batchSub {
+  font-size: 0.75rem;
+  color: #64748b;
+}
+
+.sessionPills {
+  display: flex;
+  gap: 0.35rem;
+  font-size: 0.75rem;
+}
+
+.sessionPill {
+  padding: 0.15rem 0.4rem;
+  border-radius: 4px;
+  background-color: #f1f5f9;
+  color: #475569;
+}
+
+.totalEggCount {
+  font-weight: 700;
+  color: var(--color-text-main, #1a202c);
+}
+
+.crateSub {
+  font-size: 0.72rem;
+  color: #64748b;
+  display: block;
+}
+
+.goodBadge {
+  font-weight: 600;
+  color: #166534;
+}
+
+.defectsGroup {
+  display: flex;
+  gap: 0.35rem;
+  font-size: 0.75rem;
+}
+
+.defectTag {
+  padding: 0.15rem 0.35rem;
+  border-radius: 4px;
+  font-weight: 500;
+}
+
+.tagCracked {
+  background-color: #fef3c7;
+  color: #92400e;
+}
+
+.tagDirty {
+  background-color: #ffedd5;
+  color: #9a3412;
+}
+
+.tagDamaged {
+  background-color: #fee2e2;
+  color: #991b1b;
+}
+
+.hdpBadge {
+  display: inline-block;
+  padding: 0.2rem 0.5rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.hdpHigh {
+  background-color: #d8f3dc;
+  color: #1b4332;
+}
+
+.hdpMed {
+  background-color: #fef3c7;
+  color: #92400e;
+}
+
+.hdpLow {
+  background-color: #fee2e2;
+  color: #991b1b;
+}
+
+.gradedBadge {
+  display: inline-block;
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.72rem;
+  font-weight: 600;
+  background-color: #e0f2fe;
+  color: #0369a1;
+}
+
+.ungradedBtn {
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.72rem;
+  font-weight: 600;
+  background-color: #fef3c7;
+  color: #b45309;
+  border: 1px dashed #d97706;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.ungradedBtn:hover {
+  background-color: #fde68a;
+}
+
+.actionButtons {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.actionBtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 6px;
+  border: 1px solid #e2e8f0;
+  background-color: #ffffff;
+  color: #475569;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.actionBtn:hover {
+  background-color: #f1f5f9;
+  color: #0f172a;
+}
+
+.deleteBtn:hover {
+  background-color: #fee2e2;
+  border-color: #fca5a5;
+  color: #dc2626;
+}
+
+.emptyState {
+  padding: 3.5rem 1.5rem;
+  text-align: center;
+  color: #64748b;
+}
+
+.emptyIcon {
+  margin-bottom: 0.75rem;
+  color: #94a3b8;
+}
+
+.emptyTitle {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--color-text-main, #1a202c);
+  margin-bottom: 0.35rem;
+}
+
+.emptySubtext {
+  font-size: 0.875rem;
+  max-width: 400px;
+  margin: 0 auto 1.25rem;
+}

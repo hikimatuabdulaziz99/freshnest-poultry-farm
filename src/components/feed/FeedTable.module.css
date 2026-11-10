@@ -1,0 +1,362 @@
+.tableWrapper {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  overflow-x: auto;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  font-size: 0.875rem;
+}
+
+.table th {
+  background: #f8fafc;
+  padding: 14px 16px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #475569;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  border-bottom: 1px solid #e2e8f0;
+  white-space: nowrap;
+}
+
+.table td {
+  padding: 14px 16px;
+  border-bottom: 1px solid #f1f5f9;
+  vertical-align: middle;
+}
+
+.tableRow:hover {
+  background-color: #f8fafc;
+}
+
+.actionsHeader {
+  text-align: right;
+}
+
+/* Cell Layouts */
+.nameCell {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.feedIdBadge {
+  display: inline-block;
+  font-size: 0.6875rem;
+  font-family: ui-monospace, monospace;
+  font-weight: 700;
+  color: #2d6a4f;
+  background: #d8f3dc;
+  padding: 1px 6px;
+  border-radius: 4px;
+  width: fit-content;
+}
+
+.nameButton {
+  background: none;
+  border: none;
+  padding: 0;
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: #0f172a;
+  text-align: left;
+  cursor: pointer;
+  transition: color 0.15s;
+}
+
+.nameButton:hover {
+  color: #2d6a4f;
+  text-decoration: underline;
+}
+
+.brandSubtext {
+  font-size: 0.75rem;
+  color: #64748b;
+}
+
+.typeCell {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.typeText {
+  font-weight: 500;
+  color: #1e293b;
+}
+
+.formBadge {
+  display: inline-block;
+  font-size: 0.6875rem;
+  background: #f1f5f9;
+  color: #475569;
+  padding: 2px 6px;
+  border-radius: 4px;
+  width: fit-content;
+}
+
+.targetBirdTag {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: #334155;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  padding: 3px 8px;
+  border-radius: 6px;
+}
+
+/* Stock Column */
+.stockCell {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  min-width: 110px;
+}
+
+.stockValue {
+  font-weight: 600;
+  color: #0f172a;
+}
+
+.stockWarning {
+  color: #b45309;
+}
+
+.stockBarTrack {
+  width: 100%;
+  height: 6px;
+  background: #e2e8f0;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.stockBarFill {
+  height: 100%;
+  border-radius: 3px;
+  transition: width 0.3s ease;
+}
+
+.barSuccess {
+  background: #10b981;
+}
+
+.barWarning {
+  background: #f59e0b;
+}
+
+.barDanger {
+  background: #ef4444;
+}
+
+.reorderText {
+  color: #64748b;
+  font-size: 0.8125rem;
+}
+
+.costText {
+  font-weight: 600;
+  color: #1e293b;
+}
+
+.perUnitLabel {
+  display: block;
+  font-size: 0.6875rem;
+  color: #94a3b8;
+}
+
+.inventoryValue {
+  font-weight: 700;
+  color: #047857;
+}
+
+/* Status Badges */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: 9999px;
+  white-space: nowrap;
+}
+
+.badgeInStock {
+  background: #dcfce7;
+  color: #15803d;
+}
+
+.badgeLowStock {
+  background: #fef3c7;
+  color: #b45309;
+}
+
+.badgeOutOfStock {
+  background: #fee2e2;
+  color: #b91c1c;
+}
+
+.badgeExpired {
+  background: #f3e8ff;
+  color: #7e22ce;
+}
+
+/* Expiry Date */
+.expiryCell {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.dateText {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 0.8125rem;
+  color: #334155;
+}
+
+.expiryWarning {
+  color: #dc2626;
+  font-weight: 600;
+}
+
+.locationSubtext {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  font-size: 0.6875rem;
+  color: #64748b;
+}
+
+/* Action Buttons */
+.actionButtons {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 6px;
+}
+
+.actionBtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 6px;
+  border: 1px solid #e2e8f0;
+  background: #ffffff;
+  color: #475569;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.actionBtn:hover:not(:disabled) {
+  background: #f1f5f9;
+  color: #0f172a;
+  border-color: #cbd5e1;
+}
+
+.actionBtn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.actionStockIn:hover {
+  background: #d8f3dc !important;
+  color: #1b4332 !important;
+  border-color: #95d5b2 !important;
+}
+
+.actionDispense:hover:not(:disabled) {
+  background: #e0f2fe !important;
+  color: #0369a1 !important;
+  border-color: #7dd3fc !important;
+}
+
+.actionDelete:hover {
+  background: #fee2e2 !important;
+  color: #b91c1c !important;
+  border-color: #fca5a5 !important;
+}
+
+/* Empty & Loading States */
+.loadingContainer,
+.emptyContainer {
+  padding: 48px 24px;
+  text-align: center;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+}
+
+.spinner {
+  width: 32px;
+  height: 32px;
+  border: 3px solid #e2e8f0;
+  border-top-color: #2d6a4f;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+  margin: 0 auto 12px;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.emptyIconBox {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: #f8fafc;
+  color: #94a3b8;
+  margin-bottom: 16px;
+}
+
+.emptyTitle {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #1e293b;
+  margin-bottom: 8px;
+}
+
+.emptyText {
+  font-size: 0.875rem;
+  color: #64748b;
+  max-width: 480px;
+  margin: 0 auto 20px;
+  line-height: 1.5;
+}
+
+.emptyActionBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 18px;
+  background: #2d6a4f;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.emptyActionBtn:hover {
+  background: #1b4332;
+}

@@ -1,0 +1,261 @@
+.segmentedControl {
+  display: flex;
+  align-items: center;
+  background-color: var(--color-background);
+  padding: 3px;
+  border-radius: var(--border-radius-md);
+  border: 1px solid var(--color-border);
+  gap: 2px;
+}
+
+.tabBtn {
+  padding: 5px 12px;
+  font-size: var(--font-size-xs);
+  font-weight: 600;
+  color: var(--color-text-secondary);
+  border-radius: var(--border-radius-sm);
+  transition: all var(--transition-fast);
+  white-space: nowrap;
+}
+
+.tabBtn:hover {
+  color: var(--color-primary);
+}
+
+.tabBtnActive {
+  background-color: var(--color-surface);
+  color: var(--color-primary);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.chartViewport {
+  min-height: 280px;
+  display: flex;
+  flex-direction: column;
+}
+
+.chartSection {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-4);
+  flex: 1;
+}
+
+.chartMetaRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--spacing-4);
+  flex-wrap: wrap;
+}
+
+.chartSubheading {
+  font-size: var(--font-size-sm);
+  font-weight: 700;
+  color: var(--color-primary);
+}
+
+.chartDescription {
+  font-size: var(--font-size-xs);
+  color: var(--color-text-muted);
+  margin-top: 2px;
+}
+
+.recordBadge {
+  font-size: 0.72rem;
+  font-weight: 600;
+  background-color: var(--color-background);
+  border: 1px solid var(--color-border);
+  padding: 3px 10px;
+  border-radius: var(--border-radius-full);
+  color: var(--color-text-secondary);
+}
+
+.legendGroup {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-4);
+  font-size: var(--font-size-xs);
+  font-weight: 600;
+}
+
+.legendSales, .legendExpenses {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--color-text-secondary);
+}
+
+.legendDotSales {
+  width: 10px;
+  height: 10px;
+  background-color: var(--color-primary);
+  border-radius: 2px;
+}
+
+.legendDotExpenses {
+  width: 10px;
+  height: 10px;
+  background-color: var(--color-warning);
+  border-radius: 2px;
+}
+
+.svgChartContainer {
+  width: 100%;
+  height: 240px;
+  background-color: var(--color-surface-cream);
+  border: 1px solid var(--color-border-light);
+  border-radius: var(--border-radius-md);
+  padding: var(--spacing-2);
+}
+
+.svgElement {
+  width: 100%;
+  height: 100%;
+}
+
+.emptyChartContainer {
+  height: 240px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: var(--spacing-6);
+  background-color: var(--color-surface-cream);
+  border: 1px dashed var(--color-border);
+  border-radius: var(--border-radius-md);
+}
+
+.emptyIconBox {
+  width: 52px;
+  height: 52px;
+  border-radius: var(--border-radius-full);
+  background-color: var(--color-accent-subtle);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: var(--spacing-3);
+}
+
+.emptyIcon {
+  color: var(--color-primary);
+}
+
+.emptyIconBoxGreen {
+  width: 52px;
+  height: 52px;
+  border-radius: var(--border-radius-full);
+  background-color: #E8F5E9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: var(--spacing-3);
+}
+
+.emptyIconGreen {
+  color: var(--color-secondary);
+}
+
+.emptyTitle {
+  font-size: var(--font-size-base);
+  font-weight: 700;
+  color: var(--color-primary);
+  margin-bottom: var(--spacing-1);
+}
+
+.emptyDesc {
+  font-size: var(--font-size-xs);
+  color: var(--color-text-secondary);
+  max-width: 480px;
+  line-height: 1.5;
+  margin-bottom: var(--spacing-4);
+}
+
+.emptyActionRow {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-2);
+}
+
+.batchList {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-3);
+  padding: var(--spacing-2) 0;
+}
+
+.batchRow {
+  display: grid;
+  grid-template-columns: 160px 1fr 100px;
+  align-items: center;
+  gap: var(--spacing-4);
+  padding: 10px 14px;
+  background-color: var(--color-background);
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius-md);
+}
+
+.batchInfo {
+  display: flex;
+  flex-direction: column;
+}
+
+.batchCode {
+  font-size: var(--font-size-sm);
+  font-weight: 700;
+  color: var(--color-primary);
+}
+
+.batchBreed {
+  font-size: 0.72rem;
+  color: var(--color-text-muted);
+}
+
+.batchBarWrapper {
+  height: 10px;
+  background-color: #E2E8F0;
+  border-radius: var(--border-radius-full);
+  overflow: hidden;
+}
+
+.batchBarFill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--color-secondary) 0%, var(--color-accent) 100%);
+  border-radius: var(--border-radius-full);
+}
+
+.batchCountBox {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+}
+
+.batchCount {
+  font-size: var(--font-size-sm);
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  color: var(--color-text-main);
+}
+
+.batchStatus {
+  font-size: 0.68rem;
+  font-weight: 600;
+  color: var(--color-secondary);
+}
+
+@media (max-width: 768px) {
+  .segmentedControl {
+    overflow-x: auto;
+    width: 100%;
+  }
+
+  .batchRow {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-2);
+  }
+
+  .batchCountBox {
+    text-align: left;
+  }
+}

@@ -1,0 +1,201 @@
+.chartsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.chartsGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+@media (min-width: 900px) {
+  .chartsGrid {
+    grid-template-columns: 2fr 1fr;
+  }
+}
+
+.chartCard {
+  background-color: var(--color-surface, #ffffff);
+  border: 1px solid var(--color-border, #e2e8f0);
+  border-radius: 12px;
+  padding: 1.25rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+}
+
+.chartHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.25rem;
+}
+
+.chartTitle {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--color-text-main, #1a202c);
+}
+
+.chartSubtitle {
+  font-size: 0.8rem;
+  color: var(--color-text-muted, #718096);
+}
+
+.barsWrapper {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  height: 220px;
+  padding-top: 1.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #e2e8f0;
+  gap: 0.75rem;
+}
+
+.barCol {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  height: 100%;
+  justify-content: flex-end;
+}
+
+.barValueTag {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--color-text-main, #1a202c);
+  margin-bottom: 0.25rem;
+}
+
+.barTrack {
+  width: 100%;
+  max-width: 44px;
+  background-color: #f1f5f9;
+  border-radius: 6px 6px 0 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  overflow: hidden;
+  height: 160px;
+}
+
+.barGood {
+  width: 100%;
+  background: linear-gradient(180deg, #40916c 0%, #1b4332 100%);
+  border-radius: 4px 4px 0 0;
+  transition: height 0.3s ease;
+}
+
+.barDefect {
+  width: 100%;
+  background-color: #ef4444;
+}
+
+.barDateLabel {
+  font-size: 0.75rem;
+  color: #64748b;
+  margin-top: 0.5rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+.barHdpLabel {
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: #1b4332;
+  background-color: #d8f3dc;
+  padding: 0.1rem 0.35rem;
+  border-radius: 3px;
+  margin-top: 0.2rem;
+}
+
+.distributionList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+.distItem {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.distHeader {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.84rem;
+  font-weight: 600;
+}
+
+.distBarBg {
+  width: 100%;
+  height: 8px;
+  background-color: #f1f5f9;
+  border-radius: 9999px;
+  overflow: hidden;
+}
+
+.distBarFill {
+  height: 100%;
+  border-radius: 9999px;
+  transition: width 0.3s ease;
+}
+
+.benchmarkBox {
+  background-color: #f8faf8;
+  border: 1px solid #d8f3dc;
+  border-radius: 8px;
+  padding: 1rem;
+  margin-top: 1.25rem;
+}
+
+.benchmarkTitle {
+  font-size: 0.84rem;
+  font-weight: 700;
+  color: #1b4332;
+  margin-bottom: 0.25rem;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.benchmarkText {
+  font-size: 0.8rem;
+  color: #4a5568;
+  line-height: 1.4;
+}
+
+.batchTableCard {
+  background-color: var(--color-surface, #ffffff);
+  border: 1px solid var(--color-border, #e2e8f0);
+  border-radius: 12px;
+  padding: 1.25rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+}
+
+.batchTable {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.875rem;
+  margin-top: 0.75rem;
+}
+
+.batchTable th {
+  padding: 0.65rem 0.85rem;
+  background-color: #f8fafc;
+  color: #475569;
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  border-bottom: 1px solid #e2e8f0;
+  text-align: left;
+}
+
+.batchTable td {
+  padding: 0.75rem 0.85rem;
+  border-bottom: 1px solid #f1f5f9;
+  color: #1a202c;
+}

@@ -1,0 +1,195 @@
+/* GeneralPreferencesTab Styles */
+.tabContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.headerRow {
+  margin-bottom: 20px;
+}
+
+.tabTitle {
+  font-size: 1.0625rem;
+  font-weight: 700;
+  color: #1B4332;
+  margin: 0 0 4px 0;
+}
+
+.tabSubtitle {
+  font-size: 0.8125rem;
+  color: #718096;
+  margin: 0;
+}
+
+.loadingBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 48px;
+  color: #718096;
+  font-size: 0.875rem;
+}
+
+.spinning {
+  animation: spin 1s linear infinite;
+  color: #40916C;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.statusAlert {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 14px;
+  border-radius: 6px;
+  font-size: 0.8125rem;
+  margin-bottom: 18px;
+}
+
+.alertSuccess {
+  background-color: #D8F3DC;
+  color: #1B4332;
+  border: 1px solid #B7E4C7;
+}
+
+.alertError {
+  background-color: #FED7D7;
+  color: #9B2C2C;
+  border: 1px solid #FEB2B2;
+}
+
+.noticeCard {
+  display: flex;
+  gap: 14px;
+  padding: 14px 16px;
+  background-color: #F8FAF8;
+  border: 1px solid #D8F3DC;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.noticeIconBox {
+  color: #40916C;
+  margin-top: 2px;
+}
+
+.noticeContent {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.noticeTitle {
+  font-size: 0.8125rem;
+  font-weight: 700;
+  color: #1B4332;
+  margin: 0;
+}
+
+.noticeText {
+  font-size: 0.75rem;
+  color: #4A5568;
+  margin: 0;
+  line-height: 1.45;
+}
+
+.prefsForm {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.fieldsGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+}
+
+.fullWidth {
+  grid-column: 1 / -1;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.formLabel {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #2D3748;
+}
+
+.labelIcon {
+  color: #40916C;
+}
+
+.formInput,
+.formSelect {
+  padding: 9px 12px;
+  font-size: 0.8125rem;
+  border: 1px solid #CBD5E0;
+  border-radius: 6px;
+  color: #1A202C;
+  background-color: #FFFFFF;
+  outline: none;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+  font-family: inherit;
+}
+
+.formInput:focus,
+.formSelect:focus {
+  border-color: #40916C;
+  box-shadow: 0 0 0 2px rgba(64, 145, 108, 0.2);
+}
+
+.fieldNote {
+  font-size: 0.6875rem;
+  color: #718096;
+}
+
+.formActions {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 14px;
+  border-top: 1px solid #E2E8F0;
+}
+
+.saveBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 9px 20px;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: #FFFFFF;
+  background-color: #1B4332;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.15s ease;
+}
+
+.saveBtn:hover:not(:disabled) {
+  background-color: #40916C;
+}
+
+.saveBtn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+@media (max-width: 640px) {
+  .fieldsGrid {
+    grid-template-columns: 1fr;
+  }
+}

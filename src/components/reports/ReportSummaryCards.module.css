@@ -1,0 +1,127 @@
+/* ReportSummaryCards Styles */
+.summaryContainer {
+  margin-bottom: 24px;
+}
+
+.cardsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 14px;
+}
+
+.card {
+  background-color: #FFFFFF;
+  border: 1px solid #E2E8F0;
+  border-radius: 8px;
+  padding: 14px 16px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.08);
+}
+
+.cardPositive {
+  border-left: 3px solid #40916C;
+}
+
+.cardNegative {
+  border-left: 3px solid #E53E3E;
+}
+
+.cardHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.cardLabel {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #4A5568;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+}
+
+.iconCircle {
+  width: 28px;
+  height: 28px;
+  border-radius: 6px;
+  background-color: #D8F3DC;
+  color: #1B4332;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cardBody {
+  display: flex;
+  flex-direction: column;
+}
+
+.cardValue {
+  font-size: 1.1875rem;
+  font-weight: 700;
+  color: #1A202C;
+  line-height: 1.25;
+}
+
+.textPositive {
+  color: #1B4332;
+}
+
+.textNegative {
+  color: #C53030;
+}
+
+.textWarning {
+  color: #DD6B20;
+}
+
+.cardSubtext {
+  font-size: 0.6875rem;
+  color: #718096;
+  margin-top: 4px;
+}
+
+.skeletonValue {
+  height: 22px;
+  width: 70%;
+  background-color: #E2E8F0;
+  border-radius: 4px;
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0% { opacity: 0.6; }
+  50% { opacity: 1; }
+  100% { opacity: 0.6; }
+}
+
+@media print {
+  .cardsGrid {
+    grid-template-columns: repeat(4, 1fr) !important;
+    gap: 8px !important;
+    page-break-inside: avoid;
+  }
+
+  .card {
+    border: 1px solid #CBD5E0 !important;
+    box-shadow: none !important;
+    padding: 8px 10px !important;
+  }
+
+  .cardValue {
+    font-size: 1rem !important;
+  }
+
+  .iconCircle {
+    display: none !important;
+  }
+}

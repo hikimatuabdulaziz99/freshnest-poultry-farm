@@ -1,0 +1,229 @@
+.moduleContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 1.5rem;
+  max-width: 1440px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.moduleHeader {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  background-color: var(--color-surface, #ffffff);
+  border: 1px solid var(--color-border, #e2e8f0);
+  border-radius: 14px;
+  padding: 1.25rem 1.5rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+}
+
+.headerLeft {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.headerIconBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 46px;
+  height: 46px;
+  border-radius: 12px;
+  background-color: #d8f3dc;
+  color: #1b4332;
+}
+
+.headerTitle {
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--color-text-main, #1a202c);
+  margin-bottom: 0.15rem;
+}
+
+.headerSubtitle {
+  font-size: 0.85rem;
+  color: var(--color-text-secondary, #4a5568);
+}
+
+.headerActions {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.btnPrimary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.6rem 1.15rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  background-color: var(--color-primary, #1b4332);
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  box-shadow: 0 1px 2px rgba(27, 67, 50, 0.15);
+}
+
+.btnPrimary:hover {
+  background-color: var(--color-primary-hover, #143527);
+  transform: translateY(-1px);
+}
+
+.btnSecondary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.6rem 1rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  background-color: #ffffff;
+  color: var(--color-primary, #1b4332);
+  border: 1px solid var(--color-accent, #74c69d);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.btnSecondary:hover {
+  background-color: #f0fdf4;
+}
+
+.btnIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 8px;
+  border: 1px solid var(--color-border, #cbd5e1);
+  background-color: #ffffff;
+  color: #475569;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.btnIcon:hover {
+  background-color: #f1f5f9;
+  color: #0f172a;
+}
+
+.tabNavigation {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  border-bottom: 2px solid var(--color-border, #e2e8f0);
+  padding-bottom: 0.25rem;
+  overflow-x: auto;
+}
+
+.tabButton {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.65rem 1.1rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--color-text-secondary, #4a5568);
+  border-radius: 8px;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  transition: all 0.15s ease;
+  white-space: nowrap;
+}
+
+.tabButton:hover {
+  color: var(--color-primary, #1b4332);
+  background-color: rgba(216, 243, 220, 0.4);
+}
+
+.activeTab {
+  color: var(--color-primary, #1b4332);
+  background-color: #d8f3dc;
+  font-weight: 700;
+}
+
+.tabBadge {
+  background-color: #ffffff;
+  color: #1b4332;
+  font-size: 0.72rem;
+  padding: 0.15rem 0.45rem;
+  border-radius: 9999px;
+  font-weight: 700;
+}
+
+.activeTab .tabBadge {
+  background-color: #1b4332;
+  color: #ffffff;
+}
+
+.flockBanner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  background: linear-gradient(135deg, #1b4332 0%, #2d6a4f 100%);
+  color: #ffffff;
+  border-radius: 12px;
+  padding: 1rem 1.5rem;
+  box-shadow: 0 2px 6px rgba(27, 67, 50, 0.12);
+}
+
+.flockBannerInfo {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+}
+
+.flockBannerTitle {
+  font-size: 0.95rem;
+  font-weight: 700;
+}
+
+.flockBannerSub {
+  font-size: 0.8rem;
+  color: #d8f3dc;
+}
+
+.flockBannerMetrics {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.bannerMetric {
+  display: flex;
+  flex-direction: column;
+}
+
+.bannerMetricLabel {
+  font-size: 0.7rem;
+  color: #d8f3dc;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.bannerMetricValue {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.loadingContainer {
+  padding: 4rem 2rem;
+  text-align: center;
+  color: #64748b;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}

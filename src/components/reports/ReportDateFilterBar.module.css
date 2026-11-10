@@ -1,0 +1,216 @@
+/* ReportDateFilterBar Styles */
+.filterBarContainer {
+  background-color: #FFFFFF;
+  border: 1px solid #E2E8F0;
+  border-radius: 8px;
+  padding: 14px 16px;
+  margin-bottom: 20px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.topRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.presetGroup {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.filterLabel {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: #1B4332;
+}
+
+.filterIcon {
+  color: #40916C;
+}
+
+.presetButtons {
+  display: flex;
+  align-items: center;
+  background-color: #F8FAF8;
+  border: 1px solid #D8F3DC;
+  border-radius: 6px;
+  padding: 3px;
+  gap: 2px;
+}
+
+.presetBtn {
+  background: none;
+  border: none;
+  padding: 5px 12px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: #4A5568;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.15s ease-in-out;
+}
+
+.presetBtn:hover {
+  color: #1B4332;
+  background-color: rgba(64, 145, 108, 0.1);
+}
+
+.presetBtnActive {
+  background-color: #1B4332;
+  color: #FFFFFF !important;
+  font-weight: 600;
+}
+
+.actionGroup {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.actionBtnSecondary {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #1B4332;
+  background-color: #F8FAF8;
+  border: 1px solid #D8F3DC;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.actionBtnSecondary:hover:not(:disabled) {
+  background-color: #D8F3DC;
+}
+
+.actionBtnSecondary:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.actionBtnPrimary {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 14px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #FFFFFF;
+  background-color: #40916C;
+  border: 1px solid #40916C;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.15s ease;
+}
+
+.actionBtnPrimary:hover:not(:disabled) {
+  background-color: #1B4332;
+  border-color: #1B4332;
+}
+
+.actionBtnPrimary:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.spinning {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.customDateForm {
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px dashed #E2E8F0;
+}
+
+.customInputsRow {
+  display: flex;
+  align-items: flex-end;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.dateLabel {
+  font-size: 0.6875rem;
+  font-weight: 600;
+  color: #4A5568;
+  text-transform: uppercase;
+}
+
+.dateInput {
+  padding: 5px 8px;
+  font-size: 0.75rem;
+  border: 1px solid #CBD5E0;
+  border-radius: 4px;
+  color: #1A202C;
+  outline: none;
+}
+
+.dateInput:focus {
+  border-color: #40916C;
+  box-shadow: 0 0 0 1px #40916C;
+}
+
+.applyBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 6px 12px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #FFFFFF;
+  background-color: #1B4332;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.15s ease;
+  height: 30px;
+}
+
+.applyBtn:hover {
+  background-color: #40916C;
+}
+
+.dateSpanBanner {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 10px;
+  font-size: 0.75rem;
+  color: #4A5568;
+  background-color: #F8FAF8;
+  padding: 6px 10px;
+  border-radius: 4px;
+}
+
+.calendarIcon {
+  color: #40916C;
+}
+
+@media print {
+  .filterBarContainer {
+    display: none !important;
+  }
+}

@@ -1,0 +1,71 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.alertCard {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1rem 1.25rem;
+  border-radius: 10px;
+  border: 1px solid transparent;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.warning {
+  background-color: #fffbeb;
+  border-color: #fde68a;
+  color: #92400e;
+}
+
+.danger {
+  background-color: #fef2f2;
+  border-color: #fecaca;
+  color: #991b1b;
+}
+
+.iconCol {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 0.125rem;
+}
+
+.warning .iconCol {
+  color: #d97706;
+}
+
+.danger .iconCol {
+  color: #dc2626;
+}
+
+.contentCol {
+  flex: 1;
+}
+
+.title {
+  font-size: 0.9375rem;
+  font-weight: 700;
+  margin: 0 0 0.25rem 0;
+}
+
+.message {
+  font-size: 0.84375rem;
+  margin: 0;
+  line-height: 1.45;
+  color: #4b5563;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

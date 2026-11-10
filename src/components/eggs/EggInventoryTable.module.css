@@ -1,0 +1,246 @@
+.inventoryContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.stockCardsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+}
+
+.stockCard {
+  background-color: var(--color-surface, #ffffff);
+  border: 1px solid var(--color-border, #e2e8f0);
+  border-radius: 12px;
+  padding: 1.15rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+}
+
+.stockCardHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+
+.stockGradeTitle {
+  font-size: 0.8125rem;
+  font-weight: 700;
+  color: var(--color-text-secondary, #4a5568);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.stockValue {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--color-text-main, #1a202c);
+  margin-bottom: 0.25rem;
+}
+
+.stockCrates {
+  font-size: 0.775rem;
+  color: var(--color-text-muted, #718096);
+  font-weight: 500;
+}
+
+.cardGradeA {
+  border-top: 4px solid #1b4332;
+}
+
+.cardGradeB {
+  border-top: 4px solid #0369a1;
+}
+
+.cardSmall {
+  border-top: 4px solid #d97706;
+}
+
+.cardCracked {
+  border-top: 4px solid #f59e0b;
+}
+
+.cardDirty {
+  border-top: 4px solid #ea580c;
+}
+
+.cardDamaged {
+  border-top: 4px solid #dc2626;
+}
+
+.tableCard {
+  background-color: var(--color-surface, #ffffff);
+  border: 1px solid var(--color-border, #e2e8f0);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+}
+
+.tableHeaderBar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem 1.25rem;
+  border-bottom: 1px solid var(--color-border, #e2e8f0);
+  background-color: #fafbfc;
+}
+
+.filterGroup {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem;
+  flex: 1;
+}
+
+.selectInput,
+.searchInput,
+.dateInput {
+  padding: 0.5rem 0.75rem;
+  font-size: 0.875rem;
+  border: 1px solid var(--color-border, #cbd5e1);
+  border-radius: 6px;
+  background-color: #ffffff;
+  color: var(--color-text-main, #1a202c);
+  outline: none;
+}
+
+.selectInput:focus,
+.searchInput:focus,
+.dateInput:focus {
+  border-color: var(--color-primary, #1b4332);
+}
+
+.btnPrimary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.5rem 0.95rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  background-color: var(--color-primary, #1b4332);
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.15s;
+}
+
+.btnPrimary:hover {
+  background-color: #143527;
+}
+
+.btnSecondary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.5rem 0.85rem;
+  font-size: 0.85rem;
+  font-weight: 500;
+  background-color: #ffffff;
+  color: var(--color-text-main, #1a202c);
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.btnSecondary:hover {
+  background-color: #f8fafc;
+}
+
+.responsiveTable {
+  overflow-x: auto;
+  width: 100%;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.875rem;
+  text-align: left;
+}
+
+.table th {
+  padding: 0.75rem 1rem;
+  background-color: #f8fafc;
+  color: var(--color-text-secondary, #475569);
+  font-weight: 600;
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  border-bottom: 1px solid var(--color-border, #e2e8f0);
+  white-space: nowrap;
+}
+
+.table td {
+  padding: 0.85rem 1rem;
+  border-bottom: 1px solid #f1f5f9;
+  color: var(--color-text-main, #1a202c);
+  vertical-align: middle;
+}
+
+.table tr:hover td {
+  background-color: #f8faf8;
+}
+
+.movIdPill {
+  font-family: monospace;
+  font-weight: 600;
+  color: var(--color-primary, #1b4332);
+  background-color: #e8f5e9;
+  padding: 0.2rem 0.45rem;
+  border-radius: 4px;
+  font-size: 0.82rem;
+}
+
+.typeBadge {
+  display: inline-block;
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.typeIn {
+  background-color: #d8f3dc;
+  color: #1b4332;
+}
+
+.typeOut {
+  background-color: #e0f2fe;
+  color: #0369a1;
+}
+
+.typeDamage {
+  background-color: #fee2e2;
+  color: #991b1b;
+}
+
+.typeAdjustment {
+  background-color: #fef3c7;
+  color: #92400e;
+}
+
+.qtyCell {
+  font-weight: 700;
+}
+
+.qtyPos {
+  color: #166534;
+}
+
+.qtyNeg {
+  color: #991b1b;
+}
+
+.emptyState {
+  padding: 3rem 1.5rem;
+  text-align: center;
+  color: #64748b;
+}

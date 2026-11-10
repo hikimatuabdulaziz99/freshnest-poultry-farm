@@ -1,0 +1,104 @@
+/* ReportsAnalyticsModule Styles */
+.moduleRoot {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+}
+
+.screenHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 4px;
+}
+
+.moduleTitle {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #1B4332;
+  margin: 0;
+}
+
+.moduleSubtitle {
+  font-size: 0.8125rem;
+  color: #718096;
+  margin: 2px 0 0 0;
+}
+
+/* Category Tab Switcher */
+.reportCategoryBar {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  overflow-x: auto;
+  padding-bottom: 6px;
+  border-bottom: 1px solid #E2E8F0;
+  margin-bottom: 4px;
+}
+
+.categoryTab {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 12px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: #4A5568;
+  background-color: #FFFFFF;
+  border: 1px solid #E2E8F0;
+  border-radius: 6px;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all 0.15s ease;
+}
+
+.categoryTab:hover {
+  color: #1B4332;
+  border-color: #74C69D;
+  background-color: #F8FAF8;
+}
+
+.categoryTabActive {
+  background-color: #1B4332;
+  color: #FFFFFF !important;
+  border-color: #1B4332;
+  font-weight: 600;
+}
+
+.categoryTabActive .tabIcon {
+  color: #D8F3DC;
+}
+
+.tabIcon {
+  color: #40916C;
+}
+
+/* Print Friendly Styles */
+@media print {
+  @page {
+    margin: 1.5cm;
+    size: auto;
+  }
+
+  body {
+    background: none !important;
+    color: #000000 !important;
+  }
+
+  /* Hide screen-only interactive navigation and chrome */
+  .screenHeader,
+  .reportCategoryBar {
+    display: none !important;
+  }
+
+  /* Ensure report prints cleanly */
+  .moduleRoot {
+    display: block !important;
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+}
